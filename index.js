@@ -22,7 +22,7 @@ app.get('/webhook/', function(req,res){
     res.send(req.query['hub.challenge'])
   }
   res.send('wrong token')
-}
+})
 
 app.listen(app.get('port'), function() {
   console.log('running: ', port)
